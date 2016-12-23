@@ -1,4 +1,7 @@
-from django.utils import simplejson as json
+try:
+    from django.utils import simplejson as json
+except ImportError:
+    import json
 
 
 class Dajax(object):
